@@ -32,6 +32,24 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f9904c27ba.js" crossorigin="anonymous"></script>
 
+    <style>
+        /* Ukuran iframe untuk layar desktop */
+        @media only screen and (min-width: 1024px) {
+            .responsive-map {
+                width: 1270px;
+                height: 500px;
+            }
+        }
+    
+        /* Ukuran iframe untuk layar kecil */
+        @media only screen and (max-width: 1023px) {
+            .responsive-map {
+                width: 100%;
+                height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -103,29 +121,33 @@
                 <div class="row g-4">
                     <div class="col-12">
                         <div class="row gy-4">
-                            <!-- <div class="col-md-4">
+                            <div class="col-md-4">
                                 <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>bangjoo@gmail.com</p>
-                            </div> -->
+                            </div>
                             <div class="col-md-4">
                                 <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>hellobangjoo@gmail.com</p>
                             </div>
                             <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>techBangjo123@gmail.com</p>
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Location</h5>
+                                <p><i class="fa fa-map-marker text-primary me-2"></i>Jl. Swakarsa 4 rt 008/03 no 31 Pondok Kelapa Jakarta Timur</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeIn text-center" data-wow-delay="0.1s" style="border-radius: 9vh;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.155391490625!2d106.93624257499053!3d-6.243242393745094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ce889fe7365%3A0x89d8ca178cf236a9!2sJl.%20Swakarsa%20IV%20No.31%2C%20RT.8%2FRW.3%2C%20Pd.%20Klp.%2C%20Kec.%20Duren%20Sawit%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013450!5e0!3m2!1sid!2sid!4v1707660517231!5m2!1sid!2sid" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                        <div class="responsive-map" style="overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1553914432575!2d106.9388175!3d-6.2432424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ce889fe7365%3A0x89d8ca178cf236a9!2sJl.%20Swakarsa%20IV%20No.31%2C%20RT.8%2FRW.3%2C%20Pd.%20Klp.%2C%20Kec.%20Duren%20Sawit%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013450!5e0!3m2!1sid!2sid!4v1707677108207!5m2!1sid!2sid" 
+                            width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
                     </div>
                     <div class="col-md-6" style="
                     position: relative;
                     top: 18vh;
                     left: 17vh;
                 ">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- <div class="wow fadeInUp" data-wow-delay="0.2s">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <h2 class=" ff-secondary fw-normal text-start text-primary" style="font-size:10vh;">Location</h2>
@@ -133,7 +155,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
